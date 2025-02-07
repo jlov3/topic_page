@@ -1,0 +1,72 @@
+body {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: ;
+}
+
+
+
+/* HEADER*/
+header {
+  font-size: large;
+  font-family: '', serif;
+}
+
+#navLinks {
+  list-style-type: none;
+}
+#navLinks a::before {
+  content: 'Page ';
+}
+
+
+
+/*MAIN*/
+main {
+  font-size: medium;
+  font-family: '', sans-serif;
+}
+
+#hero {
+
+}
+
+#catchline {
+
+}
+
+.details {
+  border: 4px grey;
+}
+
+#detailOne {
+
+}
+
+#detailTwo {
+
+}
+
+#detailThree {
+
+}
+
+
+
+/*FOOTER*/
+footer {
+  font-size: small;
+  font-family: '', sans-serif;
+}
+
+#footLinks {
+
+}
+
+#site {
+
+}
+
+#copyright {
+
+}
