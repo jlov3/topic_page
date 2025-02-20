@@ -1,6 +1,6 @@
-#TODO
+# TODO
 
-##Must Include:
+## Must Include:
 ~~- semantic HTML elements~~
 ~~-- a list~~
 ~~-- an <hr>~~
@@ -18,7 +18,7 @@
 -- flex & grid for macro-level layout
 -- margins & padding for micro-level positioning
 
-###Choose:
+### Choose:
 - topic
 - colours
 - fonts
@@ -26,23 +26,23 @@
 - icons set
 - images
 
-###Create:
+### Create:
 - rough sketch
 - plans per section
 - notes on content & design
 
-###Code:
+### Code:
 ~~- basic HTML~~
 - basic CSS
 
-###Test:
+### Test:
 - on chrome, firefox, safari
 - in different sizes & device simulations
 
-###Code:
+### Code:
 - inner HTML
 - detailed CSS
 
-###Finally:
+### Finally:
 - deploy page
 - submit links
