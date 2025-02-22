@@ -1,87 +1,89 @@
-# TODO
+[comment]: <> (open preview - CTRL+SHIFT+V)
 
-## Must Include:
+# $\color{red}{\textsf{TODO}}$
 
-~~- semantic HTML elements~~
+## $\color{orange}{\textsf{Must Include:}}$
 
-~~-- a list~~
+~~$\normalsize{\textsf{-- semantic HTML elements}}$~~
 
-~~-- an <hr>~~
+~~|---- a list~~
 
-~~-- a logo~~
+~~|---- an ```<hr>``` tag~~
 
-~~-- a navigation to 3 empty pages~~
+~~|---- a logo~~
 
-~~-- copyright & year in footer~~
+~~|---- a navigation to 3 empty pages~~
 
--- inline anchor links in the body text
+~~|---- copyright & year in footer~~
 
-- CSS reset
+|---- inline anchor links in the body text
 
-- CSS custom styles
+$\normalsize{\textsf{-- CSS reset}}$
 
--- background colours
+$\normalsize{\textsf{-- CSS custom styles}}$
 
--- effective colour
+|---- background colours
 
--- borders
+|---- effective colour
 
--- readable & visually pleasing typography
+|---- borders
 
--- hover effects on both images & links
+|---- readable & visually pleasing typography
 
--- flex & grid for macro-level layout
+|---- hover effects on both images & links
 
--- margins & padding for micro-level positioning
+|---- flex & grid for macro--level layout
+
+|---- margins & padding for micro--level positioning
 
 
 ### Choose:
 
-- topic
+$\normalsize{\textsf{-- topic}}$
 
-- colours
+$\normalsize{\textsf{-- colours}}$
 
-- fonts
+$\normalsize{\textsf{-- fonts}}$
 
--- 2+ Google fonts
+|---- 2+ Google fonts
 
-- icons set
+$\normalsize{\textsf{-- icons set}}$
 
-- images
+$\normalsize{\textsf{-- images}}$
 
 
 ### Create:
 
-- rough sketch
+$\normalsize{\textsf{-- rough sketch}}$
 
-- plans per section
+$\normalsize{\textsf{-- plans per section}}$
 
-- notes on content & design
+$\normalsize{\textsf{-- notes on content and design}}$
 
 
 ### Code:
 
-~~- basic HTML~~
+$\normalsize{\textsf{~~-- basic HTML~~}}$
 
-~~- basic CSS~~
+$\normalsize{\textsf{~~-- basic CSS~~}}$
 
 
 ### Test:
 
-- on chrome, firefox, safari
+$\normalsize{\textsf{-- on chrome, firefox, safari}}$
 
-- in different sizes & device simulations
+$\normalsize{\textsf{-- in different sizes and device simulations}}$
 
 
 ### Code:
 
-- inner HTML
+$\normalsize{\textsf{-- inner HTML}}$
 
-- detailed CSS
+$\normalsize{\textsf{-- detailed CSS}}$
 
 
 ### Finally:
 
-- deploy page
+$\normalsize{\textsf{-- deploy page}}$
 
-- submit links
+$\normalsize{\textsf{-- submit links}}$
