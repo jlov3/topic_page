@@ -1,29 +1,89 @@
+:root {
+  --hbg: #ecd0c0;
+  --nbg: #ece2c0;
+  --bg: #9c8059;
+
+  --link: red;
+  --linkv: maroon;
+  --linkhf: green;
+
+  --large: 1.5rem;
+  --medium: 1.2rem;
+  --small: 1rem;
+
+  --ser: 'Lansbury', serif;
+  --sans: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
   font-size: 62.5%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background: #9c8059;
+  font-family: var(--sans);
+  background: var(--bg);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+a:visited {
+  color: var(--linkv);
+}
+a:hover,
+a:focus {
+  color: var(--linkhf);
 }
 
 
 
 /* HEADER*/
 header {
-  font-size: 1.5rem;
-  font-family: "Lansbury", serif;
+  font-size: var(--large);
+  font-family: var(--ser);
+  background: var(--hbg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+header p {
+  text-align: center;
+}
+
+#logo {
+  height: 35px;
+  float: left;
+  padding: 10px;
+}
+
+nav {
+  padding: 0px 10px;
+  width: 80%;
 }
 
 #navLinks {
+  background: var(--nbg);
+  font-size: var(--medium);
   list-style-type: none;
-}
-#navLinks a::before {
-  content: 'Page ';
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
+#navLinks li {
+  margin-bottom: 5px;
+}
+#navLinks a {
+  font-size: var(--medium);
+}
+#navLinks a:hover,
+#navLinks a:focus {
+  border-bottom: 4px solid var(--linkhf);
+}
 
 
 /*MAIN*/
 main {
-  font-size: 1.2rem;
+  font-size: var(--medium);
   /*font-family: '', sans-serif;*/
 }
 
@@ -55,7 +115,7 @@ main {
 
 /*FOOTER*/
 footer {
-  font-size: 1rem;
+  font-size: var(--small);
   /*font-family: '', sans-serif;*/
 }
 
@@ -69,4 +129,37 @@ footer {
 
 #copyright {
 
+}
+
+@media only screen and (max-width: 310px) {
+  #logo {
+    height: 50px;
+  }
+  #navLinks {
+    display: block;
+  }
+  #navLinks a:before {
+    content: '-\00a0';
+  }
+  #navLinks a:hover:before,
+  #navLinks a:hover:after {
+    content: '|';
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  #logo {
+    height: 50px;
+  }
+  header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #logo, nav, header p {
+    margin: auto;
+  }
+  header p {
+    order: -1;
+    margin-top: 10px;
+  }
 }

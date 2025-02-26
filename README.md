@@ -4,7 +4,7 @@
 
 ## $\color{orange}{\textsf{Must Include:}}$
 
-~~$\normalsize{\textsf{-- semantic HTML elements}}$~~
+~~-- semantic HTML elements~~
 
 ~~|---- a list~~
 
@@ -18,9 +18,9 @@
 
 |---- inline anchor links in the body text
 
-$\normalsize{\textsf{-- CSS reset}}$
+-- CSS reset
 
-$\normalsize{\textsf{-- CSS custom styles}}$
+-- CSS custom styles
 
 |---- background colours
 
@@ -39,51 +39,51 @@ $\normalsize{\textsf{-- CSS custom styles}}$
 
 ### Choose:
 
-$\normalsize{\textsf{-- topic}}$
+-- topic
 
-$\normalsize{\textsf{-- colours}}$
+-- colours
 
-$\normalsize{\textsf{-- fonts}}$
+-- fonts
 
 |---- 2+ Google fonts
 
-$\normalsize{\textsf{-- icons set}}$
+-- icons set
 
-$\normalsize{\textsf{-- images}}$
+-- images
 
 
 ### Create:
 
-$\normalsize{\textsf{-- rough sketch}}$
+-- rough sketch
 
-$\normalsize{\textsf{-- plans per section}}$
+-- plans per section
 
-$\normalsize{\textsf{-- notes on content and design}}$
+-- notes on content and design
 
 
-### Code:
+### Starter Code:
 
-$\normalsize{\textsf{~~-- basic HTML~~}}$
+~~-- basic HTML~~
 
-$\normalsize{\textsf{~~-- basic CSS~~}}$
+~~-- basic CSS~~
 
 
 ### Test:
 
-$\normalsize{\textsf{-- on chrome, firefox, safari}}$
+-- on chrome, firefox, safari
 
-$\normalsize{\textsf{-- in different sizes and device simulations}}$
+-- in different sizes and device simulations
 
 
 ### Code:
 
-$\normalsize{\textsf{-- inner HTML}}$
+-- inner HTML
 
-$\normalsize{\textsf{-- detailed CSS}}$
+-- detailed CSS
 
 
 ### Finally:
 
-$\normalsize{\textsf{-- deploy page}}$
+-- deploy page
 
-$\normalsize{\textsf{-- submit links}}$
+-- submit links
