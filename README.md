@@ -4,6 +4,40 @@
 
 ## $\color{orange}{\textsf{Must Include:}}$
 
+
+### $\color{blue}{\textsf{Create:}}$
+
+~~-- rough sketch~~
+
+~~-- plans per section~~
+
+-- notes on content and design
+
+
+### $\color{blue}{\textsf{Choose:}}$
+
+~~-- topic~~
+
+~~-- colours~~
+
+-- fonts
+
+|---- 2+ Google fonts
+
+~~-- icons set~~
+
+-- images
+
+
+### $\color{blue}{\textsf{Starter Code:}}$
+
+~~-- basic HTML~~
+
+~~-- basic CSS~~
+
+
+### $\color{blue}{\textsf{Basics:}}$
+
 ~~-- semantic HTML elements~~
 
 ~~|---- a list~~
@@ -20,69 +54,39 @@
 
 -- CSS reset
 
--- CSS custom styles
+~~-- CSS custom styles~~
 
-|---- background colours
+~~|---- background colours~~
 
 |---- effective colour
 
-|---- borders
+~~|---- borders~~
+|------ (nav a)
 
 |---- readable & visually pleasing typography
 
 |---- hover effects on both images & links
 
-|---- flex & grid for macro--level layout
+~~|---- flex & grid for macro--level layout~~
 
-|---- margins & padding for micro--level positioning
-
-
-### Choose:
-
--- topic
-
--- colours
-
--- fonts
-
-|---- 2+ Google fonts
-
--- icons set
-
--- images
+~~|---- margins & padding for micro--level positioning~~
 
 
-### Create:
-
--- rough sketch
-
--- plans per section
-
--- notes on content and design
-
-
-### Starter Code:
-
-~~-- basic HTML~~
-
-~~-- basic CSS~~
-
-
-### Test:
-
--- on chrome, firefox, safari
-
--- in different sizes and device simulations
-
-
-### Code:
+### $\color{blue}{\textsf{Code:}}$
 
 -- inner HTML
 
 -- detailed CSS
 
 
-### Finally:
+### $\color{blue}{\textsf{Test:}}$
+
+-- on chrome, firefox, safari
+
+-- in different sizes and device simulations
+
+
+### $\color{blue}{\textsf{Finally:}}$
 
 -- deploy page
 
