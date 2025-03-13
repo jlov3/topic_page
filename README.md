@@ -1,4 +1,4 @@
-[comment]: <> (open preview - CTRL+SHIFT+V)
+[comment]: <> (open preview in VS --> CTRL+SHIFT+V)
 
 # $\color{red}{\textsf{TODO}}$
 
@@ -26,10 +26,10 @@
 
 ~~-- icons set~~
 
--- images
+~~-- images~~
 
 
-### $\color{blue}{\textsf{Starter Code:}}$
+~~### $\color{blue}{\textsf{Starter Code:}}$~~
 
 ~~-- basic HTML~~
 
@@ -52,16 +52,17 @@
 
 |---- inline anchor links in the body text
 
--- CSS reset
+~~-- CSS reset~~
 
 ~~-- CSS custom styles~~
 
 ~~|---- background colours~~
 
-|---- effective colour
+~~|---- effective colour~~
 
 ~~|---- borders~~
-|------ (nav a)
+
+~~|------ (nav a)~~
 
 |---- readable & visually pleasing typography
 
@@ -72,16 +73,22 @@
 ~~|---- margins & padding for micro--level positioning~~
 
 
-### $\color{blue}{\textsf{Code:}}$
+### $\color{blue}{\textsf{Main Code:}}$
 
 -- inner HTML
 
 -- detailed CSS
 
+### $\color{blue}{\textsf{Before you go...}}$
+
+-- re-clean HTML
+
+-- re-organize CSS
+
 
 ### $\color{blue}{\textsf{Test:}}$
 
--- on chrome, firefox, safari
+-- on chrome, firefox, safari(, vivaldi)
 
 -- in different sizes and device simulations
 

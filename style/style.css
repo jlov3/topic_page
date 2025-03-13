@@ -1,7 +1,8 @@
 :root {
-  --hbg: #ecd0c0;
-  --nbg: #ece2c0;
-  --bg: #9c8059;
+  --main: #ecd0c0;
+  --accent: #9c8059;
+  --accentTwo: #ece2c0;
+  --details: #3d1215;
 
   --link: red;
   --linkv: maroon;
@@ -18,12 +19,14 @@
 body {
   font-size: 62.5%;
   font-family: var(--sans);
-  background: var(--bg);
+  background: var(--main);
+  overflow-y: scroll;
 }
 
 a {
   text-decoration: none;
   color: var(--link);
+  text-wrap: pretty;
 }
 a:visited {
   color: var(--linkv);
@@ -39,20 +42,23 @@ a:focus {
 header {
   font-size: var(--large);
   font-family: var(--ser);
-  background: var(--hbg);
+  background: var(--accent);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-header p {
+header span {
   text-align: center;
 }
 
 #logo {
-  height: 35px;
-  float: left;
+  height: 60px;
   padding: 10px;
+  margin: 10px;
+  background: #ffffff78;
+  border-radius: 50%;
+  float: left;
 }
 
 nav {
@@ -61,7 +67,7 @@ nav {
 }
 
 #navLinks {
-  background: var(--nbg);
+  background: var(--accentTwo);
   font-size: var(--medium);
   list-style-type: none;
   padding: 5px 10px;
@@ -84,7 +90,10 @@ nav {
 /*MAIN*/
 main {
   font-size: var(--medium);
-  /*font-family: '', sans-serif;*/
+}
+
+main img {
+  height: 30vh;
 }
 
 #hero {
@@ -97,10 +106,11 @@ main {
 
 .details {
   border: 4px grey;
+  background: var(--details);
 }
 
 #detailOne {
-
+  background: var(--main);
 }
 
 #detailTwo {
@@ -115,8 +125,15 @@ main {
 
 /*FOOTER*/
 footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   font-size: var(--small);
-  /*font-family: '', sans-serif;*/
+  position: relative;
+  bottom: 0;
+  padding: 10px;
+  background: var(--accent);
 }
 
 #footLinks {
@@ -131,10 +148,13 @@ footer {
 
 }
 
-@media only screen and (max-width: 310px) {
-  #logo {
-    height: 50px;
-  }
+#disclaimer {
+  font-style: italic;
+  font-size: var(--small);
+  background: var(--accentTwo);
+}
+
+@media only screen and (max-width: 349px) {
   #navLinks {
     display: block;
   }
@@ -148,15 +168,12 @@ footer {
 }
 
 @media only screen and (max-width: 475px) {
-  #logo {
-    height: 50px;
+  #logo, nav, header p {
+    margin: auto;
   }
   header {
     flex-direction: column;
     justify-content: space-around;
-  }
-  #logo, nav, header p {
-    margin: auto;
   }
   header p {
     order: -1;

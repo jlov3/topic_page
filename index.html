@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Projects Layout Template (Example Topic)</title>
-  <link href="style/style.css" rel="stylesheet">
   <link href="https://openclipart.org/download/283326/1500390753.svg" rel="icon" type="image/x-icon">
+
+  <link href="style/modern_normalize.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet">
 
   <style type="text/css">
     /*https://stackoverflow.com/a/7961750*/
@@ -23,61 +29,67 @@
   <header>
     <img id="logo" src="https://i0.wp.com/tksellman.com/wp-content/uploads/2019/02/typewritericon.png?fit=256%2C256&ssl=1" alt="A typewriter.">
 
-    <p>Murder She Wrote</p>
+    <span>Murder, She Wrote</span>
 
     <nav>
       <ul id="navLinks">
-        <li><a href="">Behind the Scenes</a></li>
-        <li><a href="">Cast</a></li>
-        <li><a href="">Characters</a></li>
+        <li><a href="#detailOne">Angela Lansbury</a></li>
+        <li><a href="#detailTwo">Show Synopsis</a></li>
+        <li><a href="#detailThree">Character Breakdown</a></li>
       </ul>
     </nav>
-    <!-- hamburger menu -->
   </header>
 
 
   <main>
     <div id="hero">
-      <p>hero test text</p>
+      <p>Episode One: The Murder of Sherlock Holmes
+        <br><i>1984</i><br>
+        Murder, She Wrote is "one of the most successful and longest-running television shows in history, averaging 25 million viewers per week in its prime."<sup>(<a href="https://en.wikipedia.org/wiki/Murder,_She_Wrote">x</a>)</sup>
+      </p>
+      <img src="images/opening.jpg" alt="Up close of a book, titled 'Murder, She Wrote', with the main character resting her hand next to it. ">
     </div>
 
     <hr>
 
-    <p>MAIN TEST TEXT</p>
-
     <div id="catchline">
-      <img src="" alt="">
-      <blockquote></blockquote>
+      <img src="images/promo.avif" alt="Angela Lansbury leaning out of a train car for a promotional picture. ">
+      <blockquote>This will be a quote. </blockquote>
     </div>
 
     <!-- previews of pages -->
     <div id="detailOne" class="detail">
-
+      <span>Angela Lansbury, born 1925 played Jessica Fletcher, perhaps her most prominent role. Mrs. Lansbury passed in 2022. For excellence in her role as Jessica Fletcher, Mrs. Lansbury was nominated for several Golden Globes and Emmy Awards, and indeed awarded four Golden Globes. </span>
+      <img src="" alt="">
     </div>
 
     <div id="detailTwo" class="detail">
-
+      <span>Jessica Fletcher is an older woman from the fictional bayside town Cabot Cove. It's a small community, where everybody knows everybody. Becoming bored with the usual activities with her friends her age, and becoming inspired by a poorly written murder-mystery play she attended in their company, Mrs. Fletcher decides to give writing a shot. Incidentally, she becomes a (worldwide?) bestseller, and is now regularly entangled in murders. </span>
+      <img src="images/cover.jpg" alt="Cover poster for the show; the main character Jessica Fletcher's image above the show's title 'Murder, She Wrote', on a red leather book cover. ">
     </div>
 
     <div id="detailThree" class="detail">
-
+      <span>Mrs. Fletcher utilizes her out-of-the-box ideas as an author and combines these with her well developed people skills from Cabot Cove's tight knit community to make connections nobody else ever could or does. She has a strong sense of morality and never stops an investigation, even though she is not an official law enforcer and it is often dangerous to get involved. Jessica Fletcher is also a kind woman, who truly understands people and sees the best in them. Often throughout the episodes, the murderer is acting only on emotion or the murder was accidental, and Mrs. Fletcher acknowledges their remorse with understanding. But this does not stop her from putting them behind bars. </span>
+      <img src="images/episode_still.png" alt="A screenshot from a show scene. Jessica Fletcher is in front of a closed door, slightly shocked and annoyed at something off-screen. ">
     </div>
   </main>
 
 
   <footer>
     <nav id="footLinks">
-
+      <span>socials, probably. <br> and more <br> and more</span>
     </nav>
     <!-- learn more probably -->
 
-    <span id="site">examplewebsite.com</span>
+    <div id="site">
+      <span>examplewebsite.com</span>
+    </div>
 
-    <span id="copyright">
+    <div id="copyright">
       &copy;
-      <script type="text/javascript">document.write(new Date().getFullYear())</script> <!--https://stackoverflow.com/a/4562604-->
-      &nbsp;Jo Kelley
-    </span>
+      <span><script type="text/javascript">document.write(new Date().getFullYear())</script> <!--https://stackoverflow.com/a/4562604-->
+      &nbsp;Jo Kelley</span>
+    </div>
   </footer>
 
 </body>
