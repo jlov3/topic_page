@@ -27,6 +27,10 @@
   --sans: 'Sarala', 'Arial Narrow', Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 62.5%;
   font-family: var(--sans);
@@ -70,12 +74,6 @@ header {
   justify-content: space-around;
 }
 
-header span {
-  margin: auto;
-  font-size: var(--title);
-  font-family: var(--imp);
-}
-
 #logo {
   height: 60px;
   padding: 10px;
@@ -85,9 +83,15 @@ header span {
   float: left;
 }
 
-nav {
+header span {
+  margin: auto;
+  font-size: var(--title);
+  font-family: var(--imp);
+}
+
+header nav {
   padding: 0px 10px;
-  width: 80%;
+  width: 60%;
 }
 
 header span {
@@ -107,8 +111,6 @@ header span {
 
 #navLinks li {
   margin-bottom: 5px;
-}
-#navLinks a {
   color: var(--nlink);
 }
 #navLinks a:visited {
@@ -167,9 +169,23 @@ main img {
 
 #hConta #subh {
   font-size: var(--large);
-  margin-bottom: 4px;
+  margin: 0 0 4px 0;
   font-family: var(--ser);
   font-weight: 600;
+}
+
+#hConta blockquote {
+  font-style: normal;
+}
+#hConta blockquote::before,
+#hConta blockquote::after {
+  content: '"';
+  font-size: var(--large);
+  font-weight: 900;
+}
+
+#hConta figcaption {
+  font-style: italic;
 }
 
 .detail {
@@ -177,6 +193,8 @@ main img {
   background: var(--detailsBg);
   float: right;
   padding: .6rem;
+  display: flex;
+  justify-content: space-between;
 }
 .detail:not(:last-of-type) {
   margin-bottom: 10px;
@@ -185,11 +203,17 @@ main img {
   margin-bottom: 20px;
 }
 
-.detail span {
-  width: 70%;
-  float: left;
-  height: 100%;
-  vertical-align: middle;
+.detail .dTxtContainer {
+  max-width: 70%;
+  /* margin keeps text centered vertically
+  DO NOT CHANGE OR REMOVE */
+  margin: auto;
+  padding: 10px;
+  text-wrap: pretty;
+}
+
+.detail .dTxtContainer p {
+  margin: auto;
 }
 
 .detail img {
@@ -215,7 +239,7 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: var(--small);
   position: relative;
   bottom: 0;
@@ -223,19 +247,52 @@ footer {
   background: var(--secondaryBg);
 }
 
-#footLinks {
-
+#footLinks, #name, #lmc {
+  padding: 5px;
 }
 
-#site {
-
+#footLinks a {
+  display: inline-block;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+#footLinks a:hover,
+#footLinks a:focus {
+  border-bottom: none;
+}
+#footLinks a span:hover,
+#footLinks a span:focus {
+  border-bottom: 2px solid var(--linkhf);
 }
 
-#copyright {
+#footLinks a img {
+  display: inline;
+  height: 20px;
+  margin: auto 10px auto 0;
+  border: none;
+  filter: grayscale(1);
+  vertical-align: middle;
+}
+#footLinks a img:hover,
+#footLinks a img:focus {
+  transition: .4s ease;
+  filter: grayscale(0);
+}
+
+#lmc p {
+  float: right;
+}
+
+#lmc p:last-of-type {
+  font-size: var(--xsmall);
+  font-style: italic;
+}
+
+#name {
   font-size: var(--xsmall);
 }
 
-@media only screen and (max-width: 349px) {
+@media only screen and (max-width: 525px) {
   #navLinks {
     display: block;
   }
@@ -255,7 +312,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 575px) {
   #logo, nav, header p {
     margin: auto;
   }
@@ -270,8 +327,17 @@ footer {
   #logo {
     margin-top: 10px;
   }
-  #hero img {
-    width: 400px;
-    height: auto;
+}
+
+@media only screen and (max-width: 819px) {
+  #navLinks li {
+    border-right: none!important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #navLinks li:not(:last-of-type) {
+    padding-right: 5px;
+    border-right: 2px solid black;
   }
 }

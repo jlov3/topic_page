@@ -23,14 +23,14 @@
 ~~-- fonts~~
 
 ~~|---- 2+ Google fonts~~
-|------ (1 Google font, 1 external font)
+~~|------ (1 Google font, 2 external fonts)~~
 
 ~~-- icons set~~
 
 ~~-- images~~
 
 
-~~### $\color{blue}{\textsf{Starter Code:}}$~~
+### $\color{blue}{\textsf{Starter Code:}}$
 
 ~~-- basic HTML~~
 
@@ -65,9 +65,9 @@
 
 ~~|------ (nav a)~~
 
-|---- readable & visually pleasing typography
+~~|---- readable & visually pleasing typography~~
 
-|---- hover effects on both images & links
+~~|---- hover effects on both images & links~~
 
 ~~|---- flex & grid for macro--level layout~~
 
