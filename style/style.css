@@ -1,26 +1,39 @@
 :root {
-  --main: #ecd0c0;
-  --accent: #9c8059;
-  --accentTwo: #ece2c0;
-  --details: #3d1215;
+  --mainBg: #ecd0c0;
+  --secondaryBg: #9c8059;
+  --secondaryAcc: #ece2c0;
+  --heroBg: #642b2f;
+  --detailsBg: #3d1215;
 
-  --link: red;
-  --linkv: maroon;
-  --linkhf: green;
+  --link: #fff7a0;
+  --linkv: #fff7a0;
+  --linkhf: #fff7a0;
 
-  --large: 1.5rem;
+  --nlink: red;
+  --nlinkv: maroon;
+  --nlinkhf: green;
+
+  --title: 2.8rem;
+  --xlarge: 1.75rem;
+  --large: 1.8rem;
   --medium: 1.2rem;
   --small: 1rem;
+  --xsmall: .75rem;
 
-  --ser: 'Lansbury', serif;
-  --sans: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --mainTxt: #e2e2e2;
+
+  --imp: 'Lansbury', serif;
+  --ser: 'Italiana', serif;
+  --sans: 'Sarala', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
   font-size: 62.5%;
   font-family: var(--sans);
-  background: var(--main);
+  background: var(--mainBg);
+  color: var(--mainTxt);
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 a {
@@ -34,22 +47,33 @@ a:visited {
 a:hover,
 a:focus {
   color: var(--linkhf);
+  border-bottom: 2px solid var(--linkhf);
+}
+
+blockquote {
+  font-style: italic;
+}
+
+img:not(#logo) {
+  border: 1px solid black;
 }
 
 
 
 /* HEADER*/
 header {
-  font-size: var(--large);
-  font-family: var(--ser);
-  background: var(--accent);
+  font-size: var(--xlarge);
+  font-family: var(--sans);
+  background: var(--secondaryBg);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 header span {
-  text-align: center;
+  margin: auto;
+  font-size: var(--title);
+  font-family: var(--imp);
 }
 
 #logo {
@@ -66,30 +90,41 @@ nav {
   width: 80%;
 }
 
+header span {
+  color: #e9c536;
+}
+
 #navLinks {
-  background: var(--accentTwo);
+  background: var(--secondaryAcc);
   font-size: var(--medium);
   list-style-type: none;
   padding: 5px 10px;
   display: flex;
   justify-content: space-between;
+  font-family: var(--ser);
+  font-weight: 600;
 }
 
 #navLinks li {
   margin-bottom: 5px;
 }
 #navLinks a {
-  font-size: var(--medium);
+  color: var(--nlink);
+}
+#navLinks a:visited {
+  color: var(--nlinkv);
 }
 #navLinks a:hover,
 #navLinks a:focus {
-  border-bottom: 4px solid var(--linkhf);
+  color: var(--nlinkhf);
+  border-bottom: 4px solid var(--nlinkhf);
 }
 
 
 /*MAIN*/
 main {
   font-size: var(--medium);
+  margin: 20px;
 }
 
 main img {
@@ -97,28 +132,80 @@ main img {
 }
 
 #hero {
-
+  padding: 1rem;
+  width: fit-content;
+  background: var(--heroBg);
+  border: 4px solid goldenrod;
+  display: grid;
+  grid-template-areas: "catch catch conta conta conta";
+  margin-bottom: 20px;
+  font-size: var(--medium);
 }
 
-#catchline {
-
+#hero span {
+  font-family: var(--ser);
 }
 
-.details {
-  border: 4px grey;
-  background: var(--details);
+#hCatch {
+  grid-area: catch;
+}
+
+#hCatch h3 {
+  color: #fff6de;
+  background: rgba(128, 128, 128, 0.75);
+  padding: 4px 8px;
+  font-family: var(--ser);
+  font-weight: 900;
+  width: fit-content;
+  margin: 1px 0px 10px 0px;
+}
+
+#hConta {
+  grid-area: conta;
+  margin: auto 4px auto 80px;
+}
+
+#hConta #subh {
+  font-size: var(--large);
+  margin-bottom: 4px;
+  font-family: var(--ser);
+  font-weight: 600;
+}
+
+.detail {
+  border: 4px solid rgb(193, 142, 12);
+  background: var(--detailsBg);
+  float: right;
+  padding: .6rem;
+}
+.detail:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.detail:last-of-type {
+  margin-bottom: 20px;
+}
+
+.detail span {
+  width: 70%;
+  float: left;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.detail img {
+  float: right;
 }
 
 #detailOne {
-  background: var(--main);
+  width: 90%;
 }
 
 #detailTwo {
-
+  width: 80%;
 }
 
 #detailThree {
-
+  width: 70%;
 }
 
 
@@ -133,7 +220,7 @@ footer {
   position: relative;
   bottom: 0;
   padding: 10px;
-  background: var(--accent);
+  background: var(--secondaryBg);
 }
 
 #footLinks {
@@ -145,13 +232,7 @@ footer {
 }
 
 #copyright {
-
-}
-
-#disclaimer {
-  font-style: italic;
-  font-size: var(--small);
-  background: var(--accentTwo);
+  font-size: var(--xsmall);
 }
 
 @media only screen and (max-width: 349px) {
@@ -164,6 +245,13 @@ footer {
   #navLinks a:hover:before,
   #navLinks a:hover:after {
     content: '|';
+  }
+  #logo {
+    margin-top: 10px;
+  }
+  #hero img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -178,5 +266,12 @@ footer {
   header p {
     order: -1;
     margin-top: 10px;
+  }
+  #logo {
+    margin-top: 10px;
+  }
+  #hero img {
+    width: 400px;
+    height: auto;
   }
 }

@@ -20,9 +20,10 @@
 
 ~~-- colours~~
 
--- fonts
+~~-- fonts~~
 
-|---- 2+ Google fonts
+~~|---- 2+ Google fonts~~
+|------ (1 Google font, 1 external font)
 
 ~~-- icons set~~
 
@@ -75,9 +76,9 @@
 
 ### $\color{blue}{\textsf{Main Code:}}$
 
--- inner HTML
+~~-- inner HTML~~
 
--- detailed CSS
+~~-- detailed CSS~~
 
 ### $\color{blue}{\textsf{Before you go...}}$
 
