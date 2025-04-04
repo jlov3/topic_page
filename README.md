@@ -82,9 +82,9 @@
 
 ### $\color{blue}{\textsf{Before you go...}}$
 
--- re-clean HTML
+~~-- re-clean HTML~~
 
--- re-organize CSS
+~~-- re-organize CSS~~
 
 
 ### $\color{blue}{\textsf{Test:}}$
