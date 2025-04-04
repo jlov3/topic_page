@@ -111,6 +111,8 @@ header span {
 
 #navLinks li {
   margin-bottom: 5px;
+}
+#navLinks a {
   color: var(--nlink);
 }
 #navLinks a:visited {
