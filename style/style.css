@@ -5,14 +5,6 @@
   --heroBg: #642b2f;
   --detailsBg: #3d1215;
 
-  --link: #fff7a0;
-  --linkv: #fff7a0;
-  --linkhf: #fff7a0;
-
-  --nlink: red;
-  --nlinkv: maroon;
-  --nlinkhf: green;
-
   --title: 2.8rem;
   --xlarge: 1.75rem;
   --large: 1.8rem;
@@ -21,6 +13,14 @@
   --xsmall: .75rem;
 
   --mainTxt: #e2e2e2;
+
+  --link: #fff7a0;
+  --linkv: #fff7a0;
+  --linkhf: #fff7a0;
+
+  --nlink: red;
+  --nlinkv: maroon;
+  --nlinkhf: green;
 
   --imp: 'Lansbury', serif;
   --ser: 'Italiana', serif;
@@ -32,18 +32,18 @@ html {
 }
 
 body {
-  font-size: 62.5%;
-  font-family: var(--sans);
   background: var(--mainBg);
-  color: var(--mainTxt);
   overflow-y: scroll;
   overflow-x: hidden;
+  font-family: var(--sans);
+  font-size: 62.5%;
+  color: var(--mainTxt);
 }
 
 a {
   text-decoration: none;
-  color: var(--link);
   text-wrap: pretty;
+  color: var(--link);
 }
 a:visited {
   color: var(--linkv);
@@ -66,32 +66,32 @@ img:not(#logo) {
 
 /* HEADER*/
 header {
-  font-size: var(--xlarge);
-  font-family: var(--sans);
-  background: var(--secondaryBg);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background: var(--secondaryBg);
+  font-family: var(--sans);
+  font-size: var(--xlarge);
 }
 
 #logo {
   height: 60px;
-  padding: 10px;
-  margin: 10px;
-  background: #ffffff78;
-  border-radius: 50%;
   float: left;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #ffffff78;
 }
 
 header span {
   margin: auto;
-  font-size: var(--title);
   font-family: var(--imp);
+  font-size: var(--title);
 }
 
 header nav {
-  padding: 0px 10px;
   width: 60%;
+  padding: 0px 10px;
 }
 
 header span {
@@ -99,13 +99,13 @@ header span {
 }
 
 #navLinks {
-  background: var(--secondaryAcc);
-  font-size: var(--medium);
-  list-style-type: none;
-  padding: 5px 10px;
   display: flex;
   justify-content: space-between;
+  background: var(--secondaryAcc);
+  list-style-type: none;
+  padding: 5px 10px;
   font-family: var(--ser);
+  font-size: var(--medium);
   font-weight: 600;
 }
 
@@ -125,8 +125,8 @@ header span {
 
 /*MAIN*/
 main {
-  font-size: var(--medium);
   margin: 20px;
+  font-size: var(--medium);
 }
 
 main img {
@@ -134,14 +134,14 @@ main img {
 }
 
 #hero {
-  padding: 1rem;
-  width: fit-content;
-  background: var(--heroBg);
-  border: 4px solid goldenrod;
   display: grid;
   grid-template-areas: "catch catch conta conta conta";
+  width: fit-content;
   margin-bottom: 20px;
+  padding: 1rem;
+  background: var(--heroBg);
   font-size: var(--medium);
+  border: 4px solid goldenrod;
 }
 
 #hero span {
@@ -153,13 +153,13 @@ main img {
 }
 
 #hCatch h3 {
-  color: #fff6de;
-  background: rgba(128, 128, 128, 0.75);
-  padding: 4px 8px;
-  font-family: var(--ser);
-  font-weight: 900;
   width: fit-content;
   margin: 1px 0px 10px 0px;
+  padding: 4px 8px;
+  background: rgba(128, 128, 128, 0.75);
+  font-family: var(--ser);
+  font-weight: 900;
+  color: #fff6de;
 }
 
 #hConta {
@@ -168,9 +168,9 @@ main img {
 }
 
 #hConta #subh {
-  font-size: var(--large);
   margin: 0 0 4px 0;
   font-family: var(--ser);
+  font-size: var(--large);
   font-weight: 600;
 }
 
@@ -189,12 +189,12 @@ main img {
 }
 
 .detail {
-  border: 4px solid rgb(193, 142, 12);
-  background: var(--detailsBg);
-  float: right;
-  padding: .6rem;
   display: flex;
   justify-content: space-between;
+  float: right;
+  padding: .6rem;
+  background: var(--detailsBg);
+  border: 4px solid rgb(193, 142, 12);
 }
 .detail:not(:last-of-type) {
   margin-bottom: 10px;
@@ -233,18 +233,17 @@ main img {
 }
 
 
-
 /*FOOTER*/
 footer {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: var(--small);
   position: relative;
   bottom: 0;
   padding: 10px;
   background: var(--secondaryBg);
+  font-size: var(--small);
 }
 
 #footLinks, #name, #lmc {
@@ -266,12 +265,12 @@ footer {
 }
 
 #footLinks a img {
+  border: none;
   display: inline;
   height: 20px;
   margin: auto 10px auto 0;
-  border: none;
-  filter: grayscale(1);
   vertical-align: middle;
+  filter: grayscale(1);
 }
 #footLinks a img:hover,
 #footLinks a img:focus {
@@ -313,14 +312,14 @@ footer {
 }
 
 @media only screen and (max-width: 575px) {
-  #logo, nav, header p {
+  #logo, nav, header span {
     margin: auto;
   }
   header {
     flex-direction: column;
     justify-content: space-around;
   }
-  header p {
+  header span {
     order: -1;
     margin-top: 10px;
   }
