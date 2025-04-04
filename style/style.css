@@ -18,8 +18,8 @@
   --linkv: #fff7a0;
   --linkhf: #fff7a0;
 
-  --nlink: red;
-  --nlinkv: maroon;
+  --nlink: #800000;
+  --nlinkv: rgb(97, 27, 27);
   --nlinkhf: green;
 
   --imp: 'Lansbury', serif;
